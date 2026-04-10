@@ -1,59 +1,60 @@
-# LojaJogos
+# 🎮 Loja de Jogos (Game Store)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+## 📖 Sobre o Projeto
+O **LojaJogos** é uma aplicação web desenvolvida para gerir um catálogo de jogos. O sistema permite visualizar, adicionar, editar e eliminar produtos, consumindo uma API REST simulada. 
 
-## Development server
+## ✨ Funcionalidades
+* **Painel Principal:** Visualização em grelha ou lista de todos os jogos disponíveis na loja.
+* **Registo de Produtos:** Formulário dedicado para adicionar novos jogos ao catálogo.
+* **Edição e Exclusão:** Gestão completa (CRUD) dos jogos existentes, permitindo a atualização de detalhes ou a remoção de itens.
+* **Server-Side Rendering (SSR):** A aplicação está configurada para suportar renderização do lado do servidor para um melhor desempenho.
 
-To start a local development server, run:
+## 🛠️ Tecnologias Utilizadas
+* **Frontend:** [Angular v20.3.0](https://angular.dev/)
+* **Estilização:** [Bootstrap v5.3.8](https://getbootstrap.com/) para componentes visuais responsivos
+* **Programação Reativa:** [RxJS](https://rxjs.dev/) para a gestão de fluxos de dados assíncronos
+* **Backend Simulado:** Utilização de ficheiro `db.json` como base de dados
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+Certifique-se de que tem o [Node.js](https://nodejs.org/) e o [Angular CLI](https://github.com/angular/angular-cli) (versão 20.3.3) instalados na sua máquina.
+
+### 1. Clonar o Repositório e Instalar Dependências
+Na pasta raiz do projeto, instale todas as dependências necessárias:
+```bash
+npm install
+```
+2. Executar a API Simulada (Backend)
+O serviço de produtos da aplicação (ProdutoService) faz pedidos para http://localhost:3000/produtos. Para que os dados sejam carregados corretamente, é necessário expor o ficheiro db.json através do json-server:
+
+```bash
+# Caso não tenha o json-server instalado globalmente:
+npm install -g json-server
+```
+# Iniciar o servidor de dados na porta 3000
+```bash
+json-server --watch db.json --port 3000
+```
+3. Executar a Aplicação Angular (Frontend)
+Num novo terminal, inicie o servidor de desenvolvimento do Angular:
 
 ```bash
 ng serve
 ```
+Após a compilação terminar, abra o seu navegador e abra a http://localhost:4200/. A aplicação será recarregada automaticamente sempre que modificar algum ficheiro de código-fonte.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+📂 Estrutura de Rotas
+A aplicação possui as seguintes rotas principais para navegação:
 
-## Code scaffolding
+/painel-principal: Ecrã inicial com a listagem dos produtos.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+/cadastro-produto: Ecrã com o formulário de registo de um novo produto.
 
-```bash
-ng generate component component-name
-```
+/editar-produto/:id: Ecrã para edição dos dados de um produto específico.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+👨‍💻 Autor
+Rafael Gonçalves de Souza
+Desenvolvedor Full Stack Júnior
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto foi gerado com o Angular CLI versão 20.3.3.
