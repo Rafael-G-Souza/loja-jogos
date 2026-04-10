@@ -1,4 +1,3 @@
-Markdown
 # 🎮 LojaJogos
 
 ## 📖 Sobre o Projeto
