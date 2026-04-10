@@ -1,59 +1,52 @@
-# LojaJogos
+Markdown
+# 🎮 LojaJogos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+## 📖 Sobre o Projeto
+O **LojaJogos** é uma aplicação web desenvolvida em Angular para o gerenciamento de um catálogo de jogos. O sistema permite a visualização e manutenção de produtos através de uma interface interativa com comunicação a uma API REST.
 
-## Development server
+## ✨ Funcionalidades
+* **Painel Principal:** Exibição da lista de jogos cadastrados no sistema.
+* **Cadastro de Produtos:** Interface dedicada para a adição de novos jogos ao catálogo.
+* **Edição de Produtos:** Capacidade de atualizar as informações de jogos existentes utilizando o ID do produto.
+* **Operações de Backend:** Integração com um serviço que realiza as operações de obter, adicionar, atualizar e deletar produtos.
 
-To start a local development server, run:
+## 🛠️ Tecnologias Utilizadas
+* **Frontend:** [Angular v20.3.0](https://angular.dev/)
+* **Estilização:** [Bootstrap v5.3.8](https://getbootstrap.com/)
+* **Programação Reativa:** [RxJS](https://rxjs.dev/)
+* **Armazenamento:** Estrutura inicial de dados consumida através do arquivo `db.json` (simulando um banco de dados com uma lista de produtos).
+
+## 🚀 Como Executar o Projeto
+
+### 1. Instalação das Dependências
+Certifique-se de ter o Node.js e o Angular CLI instalados. Clone o repositório e execute o comando abaixo na pasta raiz:
+```bash
+npm install
+
+  ```
+2. Executando a API Simulada
+O serviço de produtos da aplicação realiza as requisições HTTP apontando para http://localhost:3000/produtos. Para iniciar o servidor de dados que responderá nessas rotas, utilize o json-server:
+
+```bash
+npx json-server --watch db.json --port 3000
+```
+3. Executando o Frontend Angular
+Para iniciar o servidor de desenvolvimento local, execute o comando:
 
 ```bash
 ng serve
 ```
+Após a compilação, abra o seu navegador e acesse http://localhost:4200/. A aplicação será recarregada automaticamente caso você modifique e salve qualquer arquivo de origem.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+📂 Estrutura de Rotas Principais
+/painel-principal: Rota padrão que exibe a tela inicial com os produtos.
 
-## Code scaffolding
+/cadastro-produto: Rota que carrega o componente para registrar um novo jogo.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+/editar-produto/:id: Rota que carrega o formulário de cadastro preenchido para edição de um jogo específico.
 
-```bash
-ng generate component component-name
-```
+👨‍💻 Autor
+Rafael Gonçalves de Souza
+Desenvolvedor Full Stack Júnior
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto foi gerado utilizando o Angular CLI versão 20.3.3.
