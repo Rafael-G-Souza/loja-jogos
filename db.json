@@ -1,21 +1,21 @@
 {
   "produtos": [
     {
-      "id": 1,
+      "id": "1",
       "produto": "Jogo 1",
       "descricao": "Descrição do Jogo 1",
       "foto": "jogo1.PNG",
       "preco": 5000
     },
     {
-      "id": 2,
+      "id": "2",
       "produto": "Jogo 2",
       "descricao": "Descrição do Jogo 2",
       "foto": "jogo2.PNG",
       "preco": 5000
     },
     {
-      "id": 3,
+      "id": "3",
       "produto": "Jogo 3",
       "descricao": "Descrição do Jogo 3",
       "foto": "jogo3.PNG",
@@ -25,8 +25,156 @@
       "produto": "Red Dead Redemption",
       "descricao": "Faroeste",
       "preco": 200,
-      "foto": "foto4.PNG",
-      "id": 4
+      "foto": "jogo1.PNG",
+      "id": "4"
+    },
+    {
+      "produto": "GTA V",
+      "descricao": "Ação e aventura",
+      "preco": 150,
+      "foto": "jogo2.PNG",
+      "id": "5"
+    },
+    {
+      "produto": "The Last of Us",
+      "descricao": "Ação e aventura",
+      "preco": 180,
+      "foto": "jogo3.PNG",
+      "id": "6"
+    },
+    {
+      "id": "7",
+      "produto": "FIFA 23",
+      "descricao": "Esporte",
+      "foto": "jogo1.PNG",
+      "preco": 149.90
+    },
+    {
+      "id": "8",
+      "produto": "Call of Duty",
+      "descricao": "FPS",
+      "foto": "jogo2.PNG",
+      "preco": 199.90
+    },
+    {
+      "id": "9",
+      "produto": "Minecraft",
+      "descricao": "Aventura",
+      "foto": "jogo3.PNG",
+      "preco": 249.90
+    },
+    {
+      "id": "10",
+      "produto": "Fortnite",
+      "descricao": "Battle Royale",
+      "foto": "jogo1.PNG",
+      "preco": 179.90
+    },
+    {
+      "id": "11",
+      "produto": "League of Legends",
+      "descricao": "MOBA",
+      "foto": "jogo2.PNG",
+      "preco": 159.90
+    },
+    {
+      "id": "12",
+      "produto": "Among Us",
+      "descricao": "Social Deduction",
+      "foto": "jogo3.PNG",
+      "preco": 129.90
+    },
+    {
+      "id": "13",
+      "produto": "Valorant",
+      "descricao": "FPS",
+      "foto": "jogo1.PNG",
+      "preco": 189.90
+    },
+    {
+      "id": "14",
+      "produto": "Apex Legends",
+      "descricao": "Battle Royale",
+      "foto": "jogo2.PNG",
+      "preco": 169.90
+    },
+    {
+      "id": "15",
+      "produto": "Rocket League",
+      "descricao": "Esporte",
+      "foto": "jogo3.PNG",
+      "preco": 139.90
+    },
+    {
+      "id": "16",
+      "produto": "Overwatch",
+      "descricao": "FPS",
+      "foto": "jogo1.PNG",
+      "preco": 219.90
+    },
+    {
+      "id": "17",
+      "produto": "World of Warcraft",
+      "descricao": "MMORPG",
+      "foto": "jogo2.PNG",
+      "preco": 299.90
+    },
+    {
+      "id": "18",
+      "produto": "The Witcher 3",
+      "descricao": "RPG",
+      "foto": "jogo3.PNG",
+      "preco": 279.90
+    },
+    {
+      "id": "19",
+      "produto": "Cyberpunk 2077",
+      "descricao": "RPG",
+      "foto": "jogo1.PNG",
+      "preco": 259.90
+    },
+    {
+      "id": "20",
+      "produto": "Assassin's Creed",
+      "descricao": "Ação",
+      "foto": "jogo2.PNG",
+      "preco": 239.90
+    },
+    {
+      "id": "21",
+      "produto": "Tomb Raider",
+      "descricao": "Aventura",
+      "foto": "jogo3.PNG",
+      "preco": 199.90
+    },
+    {
+      "id": "22",
+      "produto": "God of War",
+      "descricao": "Ação",
+      "foto": "jogo1.PNG",
+      "preco": 189.90
+    },
+    {
+      "id": "23",
+      "produto": "Spider-Man",
+      "descricao": "Ação",
+      "foto": "jogo2.PNG",
+      "preco": 229.90
+    },
+    {
+      "id": "24",
+      "produto": "Horizon Zero Dawn",
+      "descricao": "Aventura",
+      "foto": "jogo3.PNG",
+      "preco": 269.90
+    },
+    {
+      "id": "25",
+      "produto": "Uncharted",
+      "descricao": "Aventura",
+      "foto": "jogo1.PNG",
+      "preco": 149.90
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
